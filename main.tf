@@ -56,7 +56,7 @@ module "alb" {
   subnets = module.blog_vpc.public_subnets
 
   # Security Group - Allow HTTP (80) only
-  security_groups = module.blog_sg.security_group_id
+  security_groups = [module.blog_sg.security_group_id]
 
 
   # Listener for HTTP (80)
