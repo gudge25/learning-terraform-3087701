@@ -73,7 +73,7 @@ module "alb" {
   # Target group for HTTP
   target_groups = {
     ex-instance = {
-      name_prefix      = "blog-"
+      name_prefix      = "web-"
       protocol         = "HTTP"
       port             = 80
       target_type      = "instance"
